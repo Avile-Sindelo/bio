@@ -13,6 +13,16 @@ div{
     color: bisque;
 }
 
+label{
+    min-width: 100px;
+    min-height: 20px;
+}
+
+progress{
+    padding: 2% 5%;
+    margin: 0 0 0 5%;
+}
+
 #intro{
     background-image: url('../images/bg1.JPG');
     background-size: auto;
@@ -94,6 +104,7 @@ div{
 
 .fader{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 10% 2%;
@@ -115,8 +126,25 @@ div{
    
 }
 
+.skillset{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.each-skill{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
 #skills{
     background-color: #FF6B6B;
+}
+
+#my-skills-heading{
+    text-align: center;
+    margin-top: -10%;
 }
 
 #projects{

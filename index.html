@@ -10,8 +10,8 @@
     <title>Avile Sindelo!</title>
 </head>
 <body>
-    <div id="intro" class="row hidden">
-        <div class="col-12">
+    <div id="intro" class="row">
+        <div class="col-12 hidden">
             <p id="hello-world" class="animate__animated animate__heartBeat">Hello World, I'm</p>             
             <p class="name animate__animated animate__fadeInLeft">Avile Sindelo.</p>
             <span id="web-dev-span" class="animate__animated animate__fadeInLeft">Web Developer</span>
@@ -30,7 +30,60 @@
             <div id="image-div"><img id="image" class="animate__animated animate__rotateIn" src="images/avile.JPG"/></div>
         </div>
     </div>
-    <div id="skills" class="hidden fader"> My Skills </div>
+    <div id="skills" class="fader"> 
+        <div class="row">
+            <div class="col-12">
+                <h1 id="my-skills-heading" class="hidden">My Skills</h1>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-6 hidden skillset"> 
+                <!-- Coding -->
+                <h3>Coding Skills</h3>
+                <!-- HTML -->
+                <div class="each-skill hidden">
+                    <label for="html">HTML</label>
+                    <progress class="progress" id="html" value="86" max="100"> 86% </progress>
+                </div>
+                <!-- CSS -->
+                <div class="each-skill hidden">
+                    <label for="css">CSS</label>
+                    <progress class="progress" id="css" value="80" max="100"> 80% </progress>
+                </div>
+                <!--JS-->
+                <div class="each-skill hidden">
+                    <label for="js">JavaScript</label>
+                    <progress class="progress" id="javascript" value="82" max="100"> 82% </progress>
+                </div>
+                <!--React-->
+                <div class="each-skill hidden">
+                    <label for="react">React</label>
+                    <progress class="progress" id="react" value="82" max="100"> 65% </progress>
+                </div>
+            </div>
+            
+            <!-- Design -->
+            <div class="col-6 hidden skillset"> 
+                <h3>Design Skills</h3>
+                <div class="each-skill hidden">
+                    <label for="ui-ux">UI / UX design</label>
+                    <progress class="progress" id="ui-ux" value="86" max="100"> 86% </progress>
+                </div>
+
+                <div class="each-skill hidden">
+                    <label for="web-design">Web design</label>
+                    <progress class="progress" id="web-design" value="80" max="100"> 80% </progress>
+                </div>
+
+                <div class="each-skill hidden">
+                    <label for="logo-design">Logo design</label>
+                    <progress class="progress" id="logo-design" value="82" max="100"> 82% </progress>
+                </div>
+            </div>
+            
+        </div>
+    </div>
     <div id="projects" class="hidden fader"> Projects Div</div>
     <div id="contact" class="hidden fader"> Contact Div </div>
 
