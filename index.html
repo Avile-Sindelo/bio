@@ -10,28 +10,29 @@
     <title>Avile Sindelo!</title>
 </head>
 <body>
-    <div id="intro" class="row">
+    <div id="intro" class="row hidden">
         <div class="col-12">
-            Intro section - background image, greetings to the world, fun fonts and everything!
-        </div>
+            <p id="hello-world" class="animate__animated animate__heartBeat">Hello World, I'm</p>             
+            <p class="name animate__animated animate__fadeInLeft">Avile Sindelo.</p>
+            <span id="web-dev-span" class="animate__animated animate__fadeInLeft">Web Developer</span>
+        </div> 
     </div>
-    <div id="about" class="row animate__animated animate__swing">
-        <div class="col-7">
-            <h2>Avile Sindelo</h2>
-            <h4>web developer</h4>
+    <div id="about" class="row">
+        <div class="col-7 hidden">
+            <h2 id="full-name" class="animate__animated animate__bounceInLeft">Avile Sindelo</h2>
+            <h4 id="about-web-dev" class="animate__animated animate__bounceInLeft">web developer</h4>
 
-            <p>
-                This should be the brief description of who I am and what I'm capable of
+            <p id="descriptive-text" class="animate__animated animate__bounceInLeft">
+                Welcome to the portfolio website of Avile Sindelo, a talented junior web developer passionate about creating engaging and user-friendly digital experiences. With a strong foundation in HTML, CSS, and JavaScript, Avile is continuously expanding their skills to deliver modern and impactful websites. This portfolio showcases Avile's projects, demonstrating their dedication to clean code, responsive design, and a focus on user experience. From personal websites to small business solutions, Avile is eager to contribute their expertise and collaborate on exciting web development opportunities.
             </p>
-
         </div>
-        <div class="col-5">
-            <div id="image-div"><img id="image" src="images/avile.JPG"/></div>
+        <div class="col-5 hidden">
+            <div id="image-div"><img id="image" class="animate__animated animate__rotateIn" src="images/avile.JPG"/></div>
         </div>
     </div>
-    <div id="education"></div>
-    <div id="projects"></div>
-    <div id="contact"></div>
+    <div id="skills" class="hidden fader"> My Skills </div>
+    <div id="projects" class="hidden fader"> Projects Div</div>
+    <div id="contact" class="hidden fader"> Contact Div </div>
 
     <script src="script.js"></script>
 </body>
