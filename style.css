@@ -34,12 +34,14 @@ progress{
     background-color: #45969B;
 }
 
-#hello-world{
+#hello-world, #i-am{
     text-align: center;
     font-family: 'Poppins', cursive;
     font-size: 130%;
     font-weight: bolder;
     color: #45969B;
+    margin-top: 0;
+    padding-top: 0;
     animation-delay: 1.5s;
 }
 
