@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="grid/simple-grid.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script defer src="https://kit.fontawesome.com/eeb71f7a63.js" crossorigin="anonymous"></script>
     <title>Avile Sindelo!</title>
 </head>
 <body>
@@ -14,7 +15,7 @@
         <div class="col-12 hidden">
             <p id="hello-world" class="animate__animated animate__heartBeat">Hello World, </p>
             <p id="i-am" class="animate__animated animate__heartBeat">I'm</p>             
-            <p class="name animate__animated animate__fadeInLeft">Avile Sindelo.</p>
+            <p class="name animate__animated animate__rollIn">Avile Sindelo.</p>
             <span id="web-dev-span" class="animate__animated animate__fadeInLeft">Web Developer</span>
         </div> 
     </div>
@@ -60,7 +61,7 @@
                 <!-- React -->
                 <div class="each-skill hidden">
                     <label for="react">React</label>
-                    <progress class="progress" id="react" value="82" max="100"> 65% </progress>
+                    <progress class="progress" id="react" value="52" max="100"> 52% </progress>
                 </div>
             </div>
             
@@ -86,10 +87,63 @@
             
         </div>
     </div>
-    <div id="education" class="hidden fader"> Education Div </div>
-    <div id="projects" class="hidden fader"> Projects Div</div>
-    <div id="contact" class="hidden fader"> Contact Div </div>
+    <!-- Projects in a slide show below -->
+    <div id="projects" class="hidden fader">
+    
+    </div>    
+    <div id="contact" class="fader">
+        <h2 class="hidden">Contact Me!</h2>
+        <div class="row">
+            <div class="col-6" id="contact-details-div">
+                <div id="contact-details" class="hidden">
+                    <div class="each-contact-detail">
+                        <span class="fa fa-paper-plane-o icon"></span>
+                        <label id="email-address"><strong>Email Address:</strong>  avilesindelo@gmail.com</label>
+                    </div>
 
+                    <div class="each-contact-detail">
+                        <span class="fa fa-volume-control-phone icon"></span>
+                        <label id="contact-number"><strong>Phone:</strong>  0694496918</label>
+                    </div>
+                    
+                    <div class="each-contact-detail">
+                        <span class="fa fa-map-marker icon"></span>
+                        <label id="physical-address">
+                            <strong>Address:</strong>  266 Chief Holomisa Street,
+                            Mthatha,
+                            5099
+                        </label>
+                    </div>
+                </div>
+               
+            </div>
+
+            <div class="col-6" id="contact-form">
+                <form class="hidden form">
+                    <legend>
+                        <label for="full-name">Full Name</label>
+                        <input class="contact-input" type="text" placeholder="Enter your name...">
+                    </legend>
+
+                    <legend>
+                        <label for="email">Email Address</label>
+                        <input class="contact-input" type="text" placeholder="Enter your email address...">
+                    </legend>
+
+                    <legend>
+                        <label for="subject">Subject</label>
+                        <input class="contact-input" type="text" placeholder="Subject matter">
+                    </legend>
+
+                    <legend>
+                        <label for="message">Message</label>
+                        <input class="contact-input" type="text" id="contact-message" placeholder="Enter your message here ...">
+                    </legend>
+                    <button id="submitBtn">Send email!</button>
+                </form>
+            </div>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>

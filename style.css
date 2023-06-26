@@ -2,6 +2,7 @@
 
 body{
     background-color: #333;
+    color: black;
 }
 
 p{
@@ -21,6 +22,14 @@ label{
 progress{
     padding: 2% 5%;
     margin: 0 0 0 5%;
+    font-size: 85%;
+}
+
+legend{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   padding: 1% 0;
 }
 
 #intro{
@@ -32,6 +41,7 @@ progress{
 
 #about{
     background-color: #45969B;
+    width: 100%;
 }
 
 #hello-world, #i-am{
@@ -55,6 +65,44 @@ progress{
     animation-delay: 2s;
 }
 
+.form{
+    border-radius: 5px;
+    padding: 5% 7%;
+}
+
+.each-contact-detail{
+    margin: 5% 0;
+    padding: 5% 0;
+}
+
+.icon{
+    margin: 0 5% 0 0;
+}
+
+#contact-message{
+    height: 10em;
+}
+
+#contact-details{
+    padding: 5% 3%;
+
+}
+
+#contact-form{
+    background-color: #45969B;
+    border-radius: 5px;
+}
+
+.contact-input{
+    border-radius: 15px;
+    border: none;
+    margin: 0 2%;
+    padding: 2% 5%;
+    box-shadow: 1px 1px 3px grey inset;
+    font-family: 'Poppins', sans-serif;
+}
+
+
 #web-dev-span{
     margin: 0 0 0 40%;
     color: #FF8551;
@@ -69,17 +117,26 @@ progress{
 }
 
 #image{
-    width: 80%;
+    width: 90%;
     height: 50vh;
     border-radius: 50%;
     border-top: 3px solid white;
     border-bottom: 3px solid white;
     padding: 1.5%;
-    margin: 20% 0 0 7%;
+    margin: 20% 0 0 0;
     box-shadow: 2px 2px 15px black;
     background-color: #A2B5BB;
     animation-duration: 3s;
     animation-delay: 5s;
+}
+
+#submitBtn{
+    margin: 5% 0 0 25%;
+    padding: 2% 10%;
+    background-color: green;
+    border: none;
+    border-radius: 5px;
+    color: white;
 }
 
 #full-name{
@@ -142,6 +199,7 @@ progress{
 }
 #skills{
     background-color: #FF6B6B;
+    width: 100%;
 }
 
 #my-skills-heading{
@@ -155,6 +213,11 @@ progress{
 
 #contact{
     background-color: #FF9F29;
+}
+
+div.carousel-item > img{
+   height: 100%;
+   width: 100%;
 }
 
 @media(prefers-reduced-motion){

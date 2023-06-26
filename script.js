@@ -15,3 +15,8 @@ const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((elem) => {
     observer.observe(elem);
 });
+
+
+const progressElems = document.querySelectorAll('.progress');
+progressElems.forEach((bar) => console.log(bar.innerHTML));
+console.log(progressElems);
