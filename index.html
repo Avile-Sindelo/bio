@@ -4,17 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avile Sindelo!</title>
     <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="grid/simple-grid.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <script defer src="https://kit.fontawesome.com/eeb71f7a63.js" crossorigin="anonymous"></script>
-    <title>Avile Sindelo!</title>
+    <script defer src="https://cdn.jsdelivr.net/npm/send-email@1.1.3/index.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init("user_ZcSgXgprLloKsX4rN");
+    })();
+    </script> 
 </head>
 <body>
     <div id="intro" class="row">
         <div class="col-12 hidden">
             <p id="hello-world" class="animate__animated animate__heartBeat">Hello World, </p>
-            <p id="i-am" class="animate__animated animate__heartBeat">I'm</p>             
+            <p id="i-am" class="animate__animated animate__jackInTheBox">I'm</p>             
             <p class="name animate__animated animate__rollIn">Avile Sindelo.</p>
             <span id="web-dev-span" class="animate__animated animate__fadeInLeft">Web Developer</span>
         </div> 
@@ -35,14 +42,14 @@
     <div id="skills" class="fader"> 
         <div class="row">
             <div class="col-12">
-                <h1 id="my-skills-heading" class="hidden">My Skills</h1>
+                <h1 id="my-skills-heading" class="hidden section-heading">My Skills</h1>
             </div>
         </div>
         
         <div class="row">
-            <!-- CODING -->
+            <!-- TECH -->
             <div class="col-6 hidden skillset"> 
-                <h3>Coding Skills</h3>
+                <h3 class="technical-skills">Technical Skills</h3>
                 <!-- HTML -->
                 <div class="each-skill hidden">
                     <label for="html">HTML</label>
@@ -63,11 +70,16 @@
                     <label for="react">React</label>
                     <progress class="progress" id="react" value="52" max="100"> 52% </progress>
                 </div>
+                <!-- Git -->
+                <div class="each-skill hidden">
+                    <label for="react">Git</label>
+                    <progress class="progress" id="react" value="63" max="100"> 63% </progress>
+                </div>
             </div>
             
             <!-- DESIGN -->
             <div class="col-6 hidden skillset"> 
-                <h3>Design Skills</h3>
+                <h3 class="technical-skills">Design Skills</h3>
                 <!-- UI/UX -->
                 <div class="each-skill hidden">
                     <label for="ui-ux">UI / UX</label>
@@ -86,10 +98,36 @@
             </div>
         </div>
     </div>
+    <!--- Education & Experience -->
+    <div id="education" class="row">
+        <div class="col-6">
+            <h3 class="edu-exp-heading hidden"> Education </h3>
+            <ul class="edu-exp-list hidden">
+                <li class="list-item">Self-taught : W3Schools, CS50 , GeeksForGeeks, freeCodeCamp, Traversy.com, WebDevSimplified</li>
+                <li class="list-item"><a href="https://freecodecamp.org/Avile_Kimson_Sindelo">freeCodeCamp certification </a></li>
+                <li class="list-item"><a href="#">codeX bootcamp certification</a></li>
+            </ul>
+        </div>
+
+        <div class="col-6">
+            <h3 class="edu-exp-heading hidden"> Experience </h3>
+            <ul class="edu-exp-list hidden">
+                <li class="list-item">CodeX intern : Feb/2023 - Current </li>
+                <p style="font-size:80%; padding-top: 0;">
+                    At CodeX we work on building full-stack applications for a number for clients.
+                    As an intern, I have undergone a lot of training towards becoming an agile fullstack web 
+                    developer using technologies HTML, CSS and JavaScript for to get started on the frontend, with ReactJS later joining the party.
+                    And then NodeJS is used for the creation of the backend of the app, obviously with ExpressJS as a backend framework,
+                    and MongoDB for data persistance.
+                </p>
+            </ul>
+        </div>
+    </div>
+
     <!-- Projects below -->
     <div id="projects">
         <div class="row">
-            <h2 id="project-header" class="hidden"> My Projects </h2>
+            <h2 id="project-header" class="hidden section-heading"> My Projects </h2>
             <div class="col-3 hidden ">
                 <div class="project-card">
                     <h3 class="project-heading"> Tic Tac Toe </h3>
@@ -112,9 +150,11 @@
                     <img src="images/project2.png" alt="project 2" class="project-image">
                     <div class="project-description">
                         <p class="project-text">
-                            Below is the link to the Tic Tac Toe game I built some time ago.
-                            It's the same old X and O game we used to play with a pen and pad growing up, 
-                            I just digitalized the old shandis.
+                           This is another two-player game of dice.
+                           It is also an ancient game that has been played by people of all ages all over the world.
+                           
+                           Dice games are associated with gambling, but this one was built purely out of the love 
+                           for that cube and how we used to play so many games with it.
                             Click <a href="http://piggame.freevar.com/">here</a> to open the game, find an opponent and have a little fun.
                             Enjoy!
                         </p>
@@ -128,10 +168,9 @@
                     <img src="images/project3.png" alt="project 3" class="project-image">
                     <div class="project-description">
                         <p class="project-text">
-                            Below is the link to the Tic Tac Toe game I built some time ago.
-                            It's the same old X and O game we used to play with a pen and pad growing up, 
-                            I just digitalized the old shandis.
-                            Click <a href="http://yokulca.freevar.com/index.html">here</a> to open the game, find an opponent and have a little fun.
+                            A website for a clothing brand based in Mthatha, Eastern Cape. 
+                            100% black-owned fashionable clothing manufacturing company established in 2019 by Yonga Mahlamvu. 
+                            Click <a href="http://yokulca.freevar.com/index.html">here</a> and have a look at what the upcoming fashion giant has to offer and who it caters for, just to mention a few things.
                             Enjoy!
                         </p>
                     </div>
@@ -140,14 +179,13 @@
 
             <div class="col-3 hidden ">
                 <div class="project-card">
-                    <h3 class="project-heading"> Bara Hospital appointments </h3>
+                    <h3 class="project-heading"> Hospital appointments </h3>
                     <img src="images/project5.png" class="project-image">
                     <div class="project-description">
                         <p class="project-text">
-                            Below is the link to the Tic Tac Toe game I built some time ago.
-                            It's the same old X and O game we used to play with a pen and pad growing up, 
-                            I just digitalized the old shandis.
-                            Click <a href="https://kaydrew.github.io/Hospital-Booking-App/">here</a> to open the game, find an opponent and have a little fun.
+                            This is an appointment booking for hospital patients without having them physically travel there to arrange a booking.
+                            Here, a patient enters their details and receive a QR by e-mail upon successfully making the booking, which you present at the hospital later.
+                            Click <a href="https://kaydrew.github.io/Hospital-Booking-App/">here</a> and see it works.
                             Enjoy!
                         </p>
                     </div>
@@ -162,10 +200,10 @@
                     <img src="images/project4.png" class="project-image">
                     <div class="project-description">
                         <p class="project-text">
-                            Below is the link to the Tic Tac Toe game I built some time ago.
-                            It's the same old X and O game we used to play with a pen and pad growing up, 
-                            I just digitalized the old shandis.
-                            Click <a href="https://avile-sindelo.github.io/taxi-queue-app/">here</a> to open the game, find an opponent and have a little fun.
+                            Taxi manangement system for 12-passengers taxis.
+                            Passengers can join and leave their queue as they please, but as soon as there are 12 passengers on the queue and there is a taxi in the taxi queue, 
+                            the taxi can depart with its passengers.
+                            Click <a href="https://avile-sindelo.github.io/taxi-queue-app/">here</a> see how it works - under continuous development.
                             Enjoy!
                         </p>
                     </div>
@@ -175,13 +213,18 @@
     </div>    
 
     <div id="contact" class="fader">
-        <h2 class="hidden">Contact Me!</h2>
+        <h2 class="hidden section-heading">Contact Me!</h2>
         <div class="row">
             <div class="col-6" id="contact-details-div">
                 <div id="contact-details" class="hidden">
                     <div class="each-contact-detail">
                         <span class="fa fa-paper-plane-o icon"></span>
                         <label id="email-address"><strong>Email Address:</strong>  avilesindelo@gmail.com</label>
+                    </div>
+
+                    <div class="each-contact-detail">
+                        <span class="fa fa-linkedin-square icon"></span>
+                        <label id="linkedIn"><strong>LinkedIn:</strong>  <a href="https://www.linkedin.com/in/avile-sindelo-4966351b0/">LinkedIn Profile</a></label>
                     </div>
 
                     <div class="each-contact-detail">
@@ -195,7 +238,9 @@
                             <strong>Address:</strong>  266 Chief Holomisa Street,
                             Zimbane A/A,
                             Mthatha,
-                            5099
+                            5099,
+                            Eastern Cape,
+                            South Africa
                         </label>
                     </div>
                 </div>
@@ -206,22 +251,22 @@
                 <form class="hidden form">
                     <legend>
                         <label for="full-name">Full Name</label>
-                        <input class="contact-input" type="text" placeholder="Enter your name...">
+                        <input id="name-input" class="contact-input" type="text" placeholder="Enter your name..." required>
                     </legend>
 
                     <legend>
                         <label for="email">Email Address</label>
-                        <input class="contact-input" type="text" placeholder="Enter your email address...">
+                        <input id="email-input" class="contact-input" type="text" placeholder="Enter your email address..." required>
                     </legend>
 
                     <legend>
                         <label for="subject">Subject</label>
-                        <input class="contact-input" type="text" placeholder="Subject matter">
+                        <input id="subject-input" class="contact-input" type="text" placeholder="Subject matter" required>
                     </legend>
 
                     <legend>
                         <label for="message">Message</label>
-                        <input class="contact-input" type="text" id="contact-message" placeholder="Enter your message here ...">
+                        <textarea class="contact-input" type="text" id="contact-message" placeholder="Enter your message here ..." required></textarea>
                     </legend>
                     <button id="submitBtn">Send email!</button>
                 </form>
