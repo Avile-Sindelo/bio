@@ -18,29 +18,55 @@ hiddenElements.forEach((elem) => {
 
 
 //Send email
-const submitBtn = document.querySelector('#submitBtn');
-const fullName = document.querySelector('#name-input');
-const emailID = document.querySelector('#email-input');
-const emailMessage = document.querySelector('#contact-message');
 
-submitBtn.addEventListener('click', ()=>{
-    if(fullName.value == ''){
-        alert('Please fill in your name');
-    } else if(emailID.value == ''){
-        alert('Please enter your email address')
-    } else if(emailMessage.value == ''){
-        alert('Please include a message in your email for the developer to read.')
-    } else { //All fields filled successfully
-        var params = {
-            from_name: fullName.value,
-            email_id: emailID.value,
-            message: emailMessage.value
-        }
+(function(){
+    emailjs.init("ZcSgXgprLloKsX4rN");
+})();
 
-        emailjs.send("service_0uoqn1h", "template_cfqu6aa", params)
-                .then(function(res){
-                    alert('Success!!' + res.status);
-                });
+
+function sendMail(){
+    preventDefault();
+
+    var params = {
+        from_name: document.querySelector('#name-input').value,
+        email_id: document.querySelector('#email-input').value,
+        message: document.querySelector('#contact-message').value
     }
 
-});
+    const serviceID = "service_0uoqn1h";
+    const templateID = "template_cfqu6aa";
+
+    
+   
+    errorFree(params)? emailjs.send(serviceID, templateID, params)
+        .then(function(res){
+            alert('Success!!');
+            console.log(res);
+        }) : console.log('An error has occurred!');
+        location.reload(false)
+}
+
+function errorFree(params){
+    if(params.from_name == ''){
+        alert('Please enter your name');
+        return false;
+    } else if(params.email_id == ''){
+        alert('Please don\'t forget to enter your email address');
+        return false;
+    } else if(params.message == ''){
+        alert('Please make sure you include a message for the developer');
+        return false;
+    } else {
+        console.log('All the fields have been filled well, thank you!')
+        return true;
+    }
+}
+
+//  TypedJS
+var typed = new Typed('#typed-element', {
+    strings: ['Phambili', 'Avile', 'Nkwenkwezi'],
+    typeSpeed: 150,
+    loop: true,
+  });
+
+  console.log(typed);
