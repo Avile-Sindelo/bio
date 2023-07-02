@@ -177,11 +177,16 @@ li{
 }
 
 .project-card{
-    background-color: lightgrey;
-    border-radius: 10px;
+    background-color: #DEBACE;
+    border-radius: 5px;
     padding: 3%;
     border: 2px solid darkgrey;
-    box-shadow: 1px 2px 5px black;
+    box-shadow: 1px 0px 15px black;
+}
+
+.project-card:hover{
+    box-shadow: 1px 0px 15px lightseagreen;
+    transition: 1s ease;
 }
 
 .project-heading{
