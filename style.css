@@ -161,8 +161,8 @@ li{
 }
 
 #typed-element{
-    font-size: 115%;
-    color: goldenrod;
+    color: #45969B;
+    text-shadow: 1px 1px 10px snow;
 }
 
 .project-image{
@@ -178,7 +178,7 @@ li{
 
 .project-card{
     background-color: #DEBACE;
-    border-radius: 5px;
+    border-radius: 2px;
     padding: 3%;
     border: 2px solid darkgrey;
     box-shadow: 1px 0px 15px black;
