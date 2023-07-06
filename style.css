@@ -196,6 +196,10 @@ li{
     font-family: 'Poppins', sans-serif;
 }
 
+.project-text{
+    font-size: 85%;
+}
+
 #project-header{
     text-align: center;
     color: lightgrey;
