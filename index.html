@@ -61,12 +61,12 @@
                 <!-- CSS -->
                 <div class="each-skill hidden">
                     <label for="css">CSS</label>
-                    <progress class="progress" id="css" value="80" max="100"> 80% </progress>
+                    <progress class="progress" id="css" value="70" max="100"> 70% </progress>
                 </div>
                 <!-- JS -->
                 <div class="each-skill hidden">
                     <label for="js">JavaScript</label>
-                    <progress class="progress" id="javascript" value="82" max="100"> 82% </progress>
+                    <progress class="progress" id="javascript" value="80" max="100"> 80% </progress>
                 </div>
                 <!-- React -->
                 <div class="each-skill hidden">
@@ -118,6 +118,11 @@
                     <label for="logo-design">Logo</label>
                     <progress class="progress" id="logo-design" value="82" max="100"> 82% </progress>
                 </div>
+                <!-- Figma -->
+                <div class="each-skill hidden">
+                    <label for="figma-design">Figma</label>
+                    <progress class="progress" id="figma-design" value="42" max="100"> 42% </progress>
+                </div>
             </div>
         </div>
     </div>
@@ -126,7 +131,7 @@
         <div class="col-6">
             <h3 class="edu-exp-heading hidden"> Education </h3>
             <ul class="edu-exp-list hidden">
-                <li class="list-item">Self-taught  :-  W3Schools, freeCodeCamp, CS50 , Edureka, GeeksForGeeks, Tulesko learnings, Traversy.com, WebDevSimplified, The Coding Train</li>
+                <li class="list-item">Self-taught  :-  W3Schools, freeCodeCamp, CS50 , Edureka, GeeksForGeeks, Tulesko learnings, Traversy.com, WebDevSimplified, The Coding Train (2019 - current)</li>
                 <li class="list-item"><a href="https://freecodecamp.org/Avile_Kimson_Sindelo">freeCodeCamp certification </a></li>
                 <li class="list-item"><a href="#">codeX bootcamp certification - download</a></li>
             </ul>
@@ -266,28 +271,39 @@
                             South Africa
                         </label>
                     </div>
-                </div>
-               
+                </div>              
             </div>
 
             <div class="col-6" id="contact-form">
-                <form class="hidden form">
-                    <legend>
-                        <label for="full-name">Full Name</label>
-                        <input id="name-input" class="contact-input" type="text" placeholder="Enter your name..." required>
-                    </legend>
+                <div class="row hidden form">
+                    <div class="col-12">
+                       <div class="row">
+                        <div class="col-6">Full Name</div>
+                        <div class="col-6">
+                            <input type="text" id="name-input" placeholder="Enter your name ...">
+                        </div>
+                       </div> 
+                    </div>
 
-                    <legend>
-                        <label for="email">Email Address</label>
-                        <input id="email-input" class="contact-input" type="text" placeholder="Enter your email address..." required>
-                    </legend>
+                    <div class="col-12">
+                        <div class="row">
+                         <div class="col-6">Email address</div>
+                         <div class="col-6">
+                             <input type="text" id="email-input" placeholder="Enter your email address ..">
+                         </div>
+                        </div> 
+                     </div>
 
-                    <legend>
-                        <label for="message">Message</label>
-                        <textarea class="contact-input" type="text" id="contact-message" placeholder="Enter your message here ..." required></textarea>
-                    </legend>
-                    <button id="submitBtn" onclick="sendMail()">Send email!</button>
-                </form>
+                     <div class="col-12">
+                        <div class="row">
+                         <div class="col-6">Message</div>
+                         <div class="col-6">
+                            <textarea id="contact-message" placeholder="Your message goes here ..."></textarea>
+                         </div>
+                        </div> 
+                     </div>
+                </div>
+                <button id="submitBtn" class="hidden" onclick="sendMail()">Send email!</button>
             </div>
         </div>
     </div>

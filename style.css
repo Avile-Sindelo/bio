@@ -43,10 +43,20 @@ li{
     list-style-type: square;
 }
 
+input{
+    padding: 3% 5%;
+}
+
+input, textarea{
+    border-radius: 17px;
+    border: none
+}
+
 #intro{
-    background-image: url('../images/bg1.JPG');
+    background-image: url('../images/bg4.PNG');
     background-size: auto;
     background-attachment: fixed;
+    background-repeat: no-repeat;
     padding: 5%;
 }
 
@@ -91,6 +101,7 @@ li{
 .form{
     border-radius: 5px;
     padding: 5% 7%;
+    font-family: 'Poppins', sans-serif;
 }
 
 .section-heading{
@@ -108,8 +119,8 @@ li{
 
 #contact-message{
     height: 7em;
-    padding-top: -2%;
-    width: 30%;
+    padding: 3% 5%;
+    width: 62%;
 }
 
 #contact-details{
@@ -211,7 +222,7 @@ li{
 
 
 #submitBtn{
-    margin: 5% 0 0 25%;
+    margin: 5% 0 10% 25%;
     padding: 2% 10%;
     background-color: green;
     border: none;
@@ -315,8 +326,13 @@ li{
     }
 }
 
-@media screen AND (max-width: 250px){
+@media screen AND (max-width: 350px){
     #web-dev-span{
         display: none;
     }
+
+    #intro{
+        background-size: contain;
+    }
+
 }
