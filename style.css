@@ -63,7 +63,7 @@ input, textarea{
 
 #about{
     background-color: #45969B;
-    width: auto;
+    width: 100%;
 }
 
 #hello-world{
@@ -89,7 +89,7 @@ input, textarea{
 }
 
 .name{
-    color: bisque;
+    color: #333;
     text-align: center;
     word-spacing: 4px;
     font-weight: 600;
@@ -339,5 +339,14 @@ input, textarea{
 
     #intro{
         background-size: 100vh;
+    }
+
+    #about{
+        margin: 0;
+        padding: 0;
+    }
+
+    #image{
+        margin: 0 0 0 4%;
     }
 }
