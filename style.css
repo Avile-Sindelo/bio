@@ -63,7 +63,7 @@ input, textarea{
 
 #about{
     background-color: #45969B;
-    width: 100%;
+    width: auto;
 }
 
 #hello-world{
