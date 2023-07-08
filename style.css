@@ -57,6 +57,7 @@ input, textarea{
     background-size: auto;
     background-attachment: fixed;
     background-repeat: no-repeat;
+    background-color: whitesmoke;
     padding: 5%;
 }
 
