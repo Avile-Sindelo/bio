@@ -337,7 +337,6 @@ input, textarea{
     }
 
     #intro{
-        background-size: contain;
+        background-size: 100vh;
     }
-
 }
