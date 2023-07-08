@@ -25,9 +25,7 @@ hiddenElements.forEach((elem) => {
 
 
 function sendMail(){
-    preventDefault();
-
-    var params = {
+        var params = {
         from_name: document.querySelector('#name-input').value,
         email_id: document.querySelector('#email-input').value,
         message: document.querySelector('#contact-message').value
@@ -40,10 +38,19 @@ function sendMail(){
    
     errorFree(params)? emailjs.send(serviceID, templateID, params)
         .then(function(res){
-            alert('Success!!');
+            alert('Your email has been sent successfully! Thanks for contacting Avile.');
             console.log(res);
         }) : console.log('An error has occurred!');
-        location.reload(false)
+        
+        //clear the inputs
+        document.querySelector('#name-input').value = '';
+        document.querySelector('#email-input').value = '';
+        document.querySelector('#contact-message').value = '';
+
+        preventDefault();
+
+        
+        
 }
 
 function errorFree(params){

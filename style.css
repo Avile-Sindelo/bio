@@ -232,6 +232,11 @@ input, textarea{
     font-family: 'Poppins', sans-serif;
 }
 
+#submitBtn:hover{
+    cursor: pointer;
+    box-shadow: 1px 1px 5px beige;
+}
+
 #full-name{
     text-align: center;
     font-family: 'Dancing Script', cursive;
