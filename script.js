@@ -71,7 +71,7 @@ function errorFree(params){
 
 //  TypedJS
 var typed = new Typed('#typed-element', {
-    strings: ['Software enthusiast,', 'Web developer,', 'JavaScript junkie,', 'Object-Oriented Programmer,', 'Technological literate,', 'Aeronautics enthusiast,', 'Person as well!'],
+    strings: ['Software scientist,', 'Web developer,', 'JavaScript junkie,', 'Object-Oriented Programmer,', 'Technological literate,', 'Aeronautics enthusiast,', 'Person as well!'],
     typeSpeed: 150,
     loop: true,
     backDelay: 2000,
