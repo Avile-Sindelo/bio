@@ -58,6 +58,7 @@ input, textarea{
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-color: whitesmoke;
+    background-position: center center;
     padding: 5%;
 }
 
