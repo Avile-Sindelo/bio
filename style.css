@@ -258,6 +258,7 @@ input, textarea{
     text-align: center;
     animation-delay: 2s;
     animation-duration: 6s;
+    color: lightgray;
 }
 
 .fader{
