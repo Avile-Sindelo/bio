@@ -49,8 +49,6 @@ function sendMail(){
 
         preventDefault();
 
-        
-        
 }
 
 function errorFree(params){
